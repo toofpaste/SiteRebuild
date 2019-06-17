@@ -65,9 +65,11 @@
 </label>
 <section >
   <div class="tab-content">
-    <div *ngIf="showBestCheck">
+    <div *ngIf="showBestCheck" id="showBestCont">
+      <div class="container">
 
       <p class="sortTitle">Best Reddit Posts</p>
+    </div>
       <div class="tab-pane active" id="tab1" *ngFor="let post of masterPostList">
         <p><span class="up"><img src="./assets/upArrow.png"></span><span class="postVotes">{{post.upvotes}}</span><span
           class="down"><img src="./assets/downArrow.png"></span><span class="postImage"> <img src="{{post.thumbnail}}"> </span><span
@@ -88,8 +90,10 @@
     <!--    // public upvotes: number-->
     <!--    // public link: string-->
     <!--    // public thumbnail: string-->
-    <div *ngIf="showHotCheck">
+    <div *ngIf="showHotCheck" id="showHotCont">
+      <div class="container">
       <p class="sortTitle">Hottest Reddit Posts</p>
+    </div>
       <div class="tab-pane active" id="tab1" *ngFor="let post of masterPostList">
         <p><span class="up"><img src="./assets/upArrow.png"></span><span class="postVotes">{{post.upvotes}}</span><span
           class="down"><img src="./assets/downArrow.png"></span><span class="postImage"> <img src="{{post.thumbnail}}"> </span><span
@@ -103,8 +107,10 @@
       </div>
     </div>
 
-    <div *ngIf="showNewCheck">
+    <div *ngIf="showNewCheck" id="showNewCont">
+      <div class="container">
       <p class="sortTitle">Newest Reddit Posts</p>
+    </div>
       <div class="tab-pane active" id="tab1" *ngFor="let post of masterPostList">
         <p><span class="up"><img src="./assets/upArrow.png"></span><span class="postVotes">{{post.upvotes}}</span><span
           class="down"><img src="./assets/downArrow.png"></span><span class="postImage"> <img src="{{post.thumbnail}}"> </span><span
@@ -118,8 +124,10 @@
       </div>
     </div>
 
-    <div *ngIf="showRisingCheck">
+    <div *ngIf="showRisingCheck" id="showRisingCont">
+      <div class="container">
       <p class="sortTitle">Top Rising Posts</p>
+    </div>
       <div class="tab-pane active" id="tab1" *ngFor="let post of masterPostList">
         <p><span class="up"><img src="./assets/upArrow.png"></span><span class="postVotes">{{post.upvotes}}</span><span
           class="down"><img src="./assets/downArrow.png"></span><span class="postImage"> <img src="{{post.thumbnail}}"> </span><span
@@ -133,8 +141,10 @@
       </div>
     </div>
 
-    <div *ngIf="showControversialCheck">
+    <div *ngIf="showControversialCheck" id="showContrCont">
+      <div class="container">
       <p class="sortTitle">Top Controversial Posts</p>
+    </div>
       <div class="tab-pane active" id="tab1" *ngFor="let post of masterPostList">
         <p><span class="up"><img src="./assets/upArrow.png"></span><span class="postVotes">{{post.upvotes}}</span><span
           class="down"><img src="./assets/downArrow.png"></span><span class="postImage"> <img src="{{post.thumbnail}}"> </span><span
@@ -148,8 +158,10 @@
       </div>
     </div>
 
-    <div *ngIf="showTopCheck">
+    <div *ngIf="showTopCheck" id="showTopCont">
+      <div class="container">
       <p class="sortTitle">Top Reddit Posts</p>
+    </div>
       <div class="tab-pane active" id="tab1" *ngFor="let post of masterPostList">
         <p><span class="up"><img src="./assets/upArrow.png"></span><span class="postVotes">{{post.upvotes}}</span><span
           class="down"><img src="./assets/downArrow.png"></span><span class="postImage"> <img src="{{post.thumbnail}}"> </span><span

@@ -390,9 +390,39 @@ li.active a:before {
   height: 21px;
 
 }
+#showBestCont .container{
+  margin-left: -1000px;
+  display: flex;
+  justify-content: flex-start;
+}
+#showContrCont .container{
+  margin-left: -1000px;
+  display: flex;
+  justify-content: flex-start;
+}
+#showTopCont .container{
+  margin-left: -1000px;
+  display: flex;
+  justify-content: flex-start;
+}
+#showNewCont .container{
+  margin-left: -1000px;
+  display: flex;
+  justify-content: flex-start;
+}
+#showHotCont .container{
+  margin-left: -1000px;
+  display: flex;
+  justify-content: flex-start;
+}
+#showRisingCont .container{
+  margin-left: -1000px;
+  display: flex;
+  justify-content: flex-start;
+}
 
 div .sortTitle {
- text-align: -moz-left;
+ margin-left: -90px;
   color: #2c66c1;
   font-family: 'Catamaran', sans-serif;
   margin-top: 3px;
